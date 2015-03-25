@@ -1,0 +1,16 @@
+{
+    "schema_version": "1.0.0",
+    "packages": [
+        {
+            "name": "FileTmpl",
+            "details": "https://github.com/simoncoulton/FileTmpl",
+            "releases": [
+                {
+                    "sublime_text": "*",
+                    "platforms": "osx",
+                    "details": "https://github.com/simoncoulton/FileTmpl/tags"
+                }
+            ]
+        }
+    ]
+}
