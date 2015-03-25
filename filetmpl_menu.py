@@ -170,15 +170,23 @@ class MenuUpdater(object):
         return items
 
     def main(self):
+        items = self.menu_items
+        menu = ','.join(self.menu_items)
+        if items:
+            menu += ','
         self.update_menu(
             MAIN_MENU,
-            MAIN_MENU_CONTENT.format(children=','.join(self.menu_items) + ',')
+            MAIN_MENU_CONTENT.format(children=menu)
         )
 
     def sidebar(self):
+        items = self.menu_items
+        menu = ','.join(self.menu_items)
+        if items:
+            menu += ','
         self.update_menu(
             SIDEBAR_MENU,
-            SIDEBAR_MENU_CONTENT.format(children=','.join(self.menu_items) + ',')
+            SIDEBAR_MENU_CONTENT.format(children=menu)
         )
 
 
